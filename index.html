@@ -1,18 +1,15 @@
+encoding: UTF-8
 ---
-¡¡¡¡layout: default
-¡¡¡¡title: ÎÒµÄBlog
-¡¡¡¡---
+layout: default
+title: æˆ‘çš„Blog
+---
+<h2>{{ page.title }}</h2>
+<p>æœ€æ–°æ–‡ç« </p>
+<ul>
 
-¡¡¡¡<h2>{{ page.title }}</h2>
+ã€€{% for post in site.posts %}
 
-¡¡¡¡<p>×îÐÂÎÄÕÂ</p>
+ã€€ã€€<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 
-¡¡¡¡<ul>
-
-¡¡¡¡¡¡¡¡{% for post in site.posts %}
-
-¡¡¡¡¡¡¡¡¡¡¡¡<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
-¡¡¡¡¡¡¡¡{% endfor %}
-
-¡¡¡¡</ul>
+ã€€ã€€ã€€{% endfor %}
+</ul>
