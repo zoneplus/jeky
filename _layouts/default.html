@@ -1,38 +1,7 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @zoneplus
-
-1
-0
-
-    53
-
-zoneplus/iqq forked from pizn/kunka
-
-iqq/_layouts/default.html
-@pizn pizn on 22 Sep 2013 fix bug
-
-1 contributor
-151 lines (147 sloc) 7.032 kB
 <!DOCTYPE html>
 <html>
     <head>
-        <!--
-         **
-         * Auther:      掌心
-         * Contact:     http://www.zhanxin.info
-         * Create:      2013.08.10
-         * Theme Name:  Kunka
-         * Authorize:   BY-NC-SA
-         **
-        -->
-        <meta charset="utf-8">
+       
         <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
         <!-- meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -40,15 +9,7 @@ iqq/_layouts/default.html
         <meta name="author" content="{{ site.author.name }}" />
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
         <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
-        <!-- atom -->
-        <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.url }}{{ site.feed }}" />
-        <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon" />
-        <!-- font-awesome -->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{ site.url }}/syntax.css">
-        <link rel="stylesheet" href="{{ site.url }}/css.css">
-        {% if site.googleAnaly.config %}
+        
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', '{{ site.googleAnaly.id }}']);
